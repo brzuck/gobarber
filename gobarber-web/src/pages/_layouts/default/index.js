@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Wrapper } from './styles';
 import Header from '~/components/Header';
+import { Wrapper } from './styles';
 
 export default function DefaultLayout({ children }) {
   return (
     <Wrapper>
-      <Header>{children}</Header>
+      <Header />
+      {children}
     </Wrapper>
   );
 }

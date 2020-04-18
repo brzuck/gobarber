@@ -13,7 +13,7 @@ import {
 
 export default function Notifications() {
   const [visible, setVisible] = useState(false);
-  const [notifications, setNotifications] = useState([false]);
+  const [notifications, setNotifications] = useState([]);
 
   const hasUnread = useMemo(
     () => !!notifications.find((notification) => notification.read === false),
